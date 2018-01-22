@@ -18,4 +18,4 @@ services:
     - wallet_backup_filename=
     volumes:
      - ./UnifyConf:/root/.unifyV2
-    image: morecoin/unify:2.0
+    image: morecoin/unify:2.1

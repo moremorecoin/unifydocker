@@ -1,6 +1,6 @@
 apt-get update
 #apt-get upgrade -y
-apt-get install -y build-essential libssl-dev libboost-all-dev git libjson-pp-perl
+apt-get install -y build-essential libssl-dev libboost-all-dev git libjson-pp-perl curl
 apt-get install -y software-properties-common
 add-apt-repository ppa:bitcoin/bitcoin
 apt-get update

@@ -1,1 +1,1 @@
-docker build -t morecoin/unify:2.0 .
+docker build -t morecoin/unify:2.1 .
