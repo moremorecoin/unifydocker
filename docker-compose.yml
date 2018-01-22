@@ -1,0 +1,21 @@
+version: '3'
+services:
+  unify:
+    restart: always
+    ports:
+    - 127.0.0.1:9997:9999
+    environment:
+    - Donate_portion_of_staking=0.1
+    #Note: use $$ for $
+    - mailjet_api_key=
+    - mailjet_secret_key=
+    #send backup wallet file to this email address 
+    - mail_to=
+    - mail_sender_name=
+    #title and content of the backup email
+    - mail_subject=
+    #wallet filename, if you don't want it to be wallet.dat
+    - wallet_backup_filename=
+    volumes:
+     - ./UnifyConf:/root/.unifyV2
+    image: morecoin/unify:2.0
